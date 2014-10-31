@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A34C69A41A03BEA300026E3D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A34C69A31A03BEA300026E3D /* main.m */; };
+		A34C69A71A03BEA300026E3D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A34C69A61A03BEA300026E3D /* AppDelegate.m */; };
+		A34C69AA1A03BEA300026E3D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A34C69A91A03BEA300026E3D /* ViewController.m */; };
+		A34C69AD1A03BEA300026E3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A34C69AB1A03BEA300026E3D /* Main.storyboard */; };
+		A34C69AF1A03BEA300026E3D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A34C69AE1A03BEA300026E3D /* Images.xcassets */; };
+		A34C69B21A03BEA300026E3D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A34C69B01A03BEA300026E3D /* LaunchScreen.xib */; };
+		A34C69BE1A03BEA300026E3D /* SelfieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A34C69BD1A03BEA300026E3D /* SelfieTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A34C69B81A03BEA300026E3D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A34C69961A03BEA300026E3D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A34C699D1A03BEA300026E3D;
+			remoteInfo = Selfie;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A34C699E1A03BEA300026E3D /* Selfie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Selfie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A34C69A21A03BEA300026E3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A34C69A31A03BEA300026E3D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A34C69A51A03BEA300026E3D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A34C69A61A03BEA300026E3D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A34C69A81A03BEA300026E3D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A34C69A91A03BEA300026E3D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A34C69AC1A03BEA300026E3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A34C69AE1A03BEA300026E3D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A34C69B11A03BEA300026E3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A34C69B71A03BEA300026E3D /* SelfieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SelfieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A34C69BC1A03BEA300026E3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A34C69BD1A03BEA300026E3D /* SelfieTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelfieTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A34C699B1A03BEA300026E3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A34C69B41A03BEA300026E3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A34C69951A03BEA300026E3D = {
+			isa = PBXGroup;
+			children = (
+				A34C69A01A03BEA300026E3D /* Selfie */,
+				A34C69BA1A03BEA300026E3D /* SelfieTests */,
+				A34C699F1A03BEA300026E3D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A34C699F1A03BEA300026E3D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A34C699E1A03BEA300026E3D /* Selfie.app */,
+				A34C69B71A03BEA300026E3D /* SelfieTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A34C69A01A03BEA300026E3D /* Selfie */ = {
+			isa = PBXGroup;
+			children = (
+				A34C69A51A03BEA300026E3D /* AppDelegate.h */,
+				A34C69A61A03BEA300026E3D /* AppDelegate.m */,
+				A34C69A81A03BEA300026E3D /* ViewController.h */,
+				A34C69A91A03BEA300026E3D /* ViewController.m */,
+				A34C69AB1A03BEA300026E3D /* Main.storyboard */,
+				A34C69AE1A03BEA300026E3D /* Images.xcassets */,
+				A34C69B01A03BEA300026E3D /* LaunchScreen.xib */,
+				A34C69A11A03BEA300026E3D /* Supporting Files */,
+			);
+			path = Selfie;
+			sourceTree = "<group>";
+		};
+		A34C69A11A03BEA300026E3D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A34C69A21A03BEA300026E3D /* Info.plist */,
+				A34C69A31A03BEA300026E3D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A34C69BA1A03BEA300026E3D /* SelfieTests */ = {
+			isa = PBXGroup;
+			children = (
+				A34C69BD1A03BEA300026E3D /* SelfieTests.m */,
+				A34C69BB1A03BEA300026E3D /* Supporting Files */,
+			);
+			path = SelfieTests;
+			sourceTree = "<group>";
+		};
+		A34C69BB1A03BEA300026E3D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A34C69BC1A03BEA300026E3D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A34C699D1A03BEA300026E3D /* Selfie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A34C69C11A03BEA300026E3D /* Build configuration list for PBXNativeTarget "Selfie" */;
+			buildPhases = (
+				A34C699A1A03BEA300026E3D /* Sources */,
+				A34C699B1A03BEA300026E3D /* Frameworks */,
+				A34C699C1A03BEA300026E3D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Selfie;
+			productName = Selfie;
+			productReference = A34C699E1A03BEA300026E3D /* Selfie.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A34C69B61A03BEA300026E3D /* SelfieTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A34C69C41A03BEA300026E3D /* Build configuration list for PBXNativeTarget "SelfieTests" */;
+			buildPhases = (
+				A34C69B31A03BEA300026E3D /* Sources */,
+				A34C69B41A03BEA300026E3D /* Frameworks */,
+				A34C69B51A03BEA300026E3D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A34C69B91A03BEA300026E3D /* PBXTargetDependency */,
+			);
+			name = SelfieTests;
+			productName = SelfieTests;
+			productReference = A34C69B71A03BEA300026E3D /* SelfieTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A34C69961A03BEA300026E3D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = Apps2eaze;
+				TargetAttributes = {
+					A34C699D1A03BEA300026E3D = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					A34C69B61A03BEA300026E3D = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = A34C699D1A03BEA300026E3D;
+					};
+				};
+			};
+			buildConfigurationList = A34C69991A03BEA300026E3D /* Build configuration list for PBXProject "Selfie" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A34C69951A03BEA300026E3D;
+			productRefGroup = A34C699F1A03BEA300026E3D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A34C699D1A03BEA300026E3D /* Selfie */,
+				A34C69B61A03BEA300026E3D /* SelfieTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A34C699C1A03BEA300026E3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A34C69AD1A03BEA300026E3D /* Main.storyboard in Resources */,
+				A34C69B21A03BEA300026E3D /* LaunchScreen.xib in Resources */,
+				A34C69AF1A03BEA300026E3D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A34C69B51A03BEA300026E3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A34C699A1A03BEA300026E3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A34C69AA1A03BEA300026E3D /* ViewController.m in Sources */,
+				A34C69A71A03BEA300026E3D /* AppDelegate.m in Sources */,
+				A34C69A41A03BEA300026E3D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A34C69B31A03BEA300026E3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A34C69BE1A03BEA300026E3D /* SelfieTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A34C69B91A03BEA300026E3D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A34C699D1A03BEA300026E3D /* Selfie */;
+			targetProxy = A34C69B81A03BEA300026E3D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A34C69AB1A03BEA300026E3D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A34C69AC1A03BEA300026E3D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A34C69B01A03BEA300026E3D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A34C69B11A03BEA300026E3D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A34C69BF1A03BEA300026E3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A34C69C01A03BEA300026E3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A34C69C21A03BEA300026E3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Selfie/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A34C69C31A03BEA300026E3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Selfie/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A34C69C51A03BEA300026E3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SelfieTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Selfie.app/Selfie";
+			};
+			name = Debug;
+		};
+		A34C69C61A03BEA300026E3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SelfieTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Selfie.app/Selfie";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A34C69991A03BEA300026E3D /* Build configuration list for PBXProject "Selfie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A34C69BF1A03BEA300026E3D /* Debug */,
+				A34C69C01A03BEA300026E3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A34C69C11A03BEA300026E3D /* Build configuration list for PBXNativeTarget "Selfie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A34C69C21A03BEA300026E3D /* Debug */,
+				A34C69C31A03BEA300026E3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A34C69C41A03BEA300026E3D /* Build configuration list for PBXNativeTarget "SelfieTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A34C69C51A03BEA300026E3D /* Debug */,
+				A34C69C61A03BEA300026E3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A34C69961A03BEA300026E3D /* Project object */;
+}
