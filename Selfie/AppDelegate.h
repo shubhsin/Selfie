@@ -10,7 +10,13 @@
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
+
 @property (strong, nonatomic) UIWindow *window;
+@property int score;
+
+@property (strong,nonatomic) NSString * username;
+@property int timeInterval;
+
 
 
 @end
