@@ -72,10 +72,15 @@
     [UIView animateWithDuration:0.7 delay:0 usingSpringWithDamping:0.8 initialSpringVelocity:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         _myTable.transform = CGAffineTransformIdentity;
         _navBarView.transform = CGAffineTransformIdentity;
-        _scoreCircleImage.alpha = 1;
-        _scoreCircleImage.transform = CGAffineTransformIdentity;
-        _yourHighScoreLabel.alpha = 1;
     }completion:^(BOOL finished){
+       
+        [UIView animateWithDuration:0.5 delay:0 usingSpringWithDamping:0.8 initialSpringVelocity:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+            _scoreCircleImage.alpha = 1;
+            _scoreCircleImage.transform = CGAffineTransformIdentity;
+            _yourHighScoreLabel.alpha = 1;
+        } completion:^(BOOL finished) {
+            
+        }];
         
     }];
 }

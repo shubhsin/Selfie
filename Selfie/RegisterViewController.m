@@ -44,6 +44,7 @@
 {
     [_usernameTextField resignFirstResponder];
     [_emailTextField resignFirstResponder];
+    [_countryTextField resignFirstResponder];
 }
 
 
@@ -69,7 +70,7 @@
     PFObject * userObject = [PFObject objectWithClassName:@"Users"];
     userObject[@"username"]=_usernameTextField.text;
     userObject[@"email"]=_emailTextField.text;
-    
+    userObject[@"country"]=_countryTextField.text;
     [userObject saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (succeeded) {
             

@@ -20,7 +20,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
-                    <color key="backgroundColor" red="0.99215686270000003" green="0.52549019610000003" blue="0.023529411760000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.71764705882352942" green="0.17254901960784313" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shubham Sorte" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="sAc-dS-nBy">
                     <rect key="frame" x="60" y="8" width="153" height="29"/>
@@ -37,7 +37,7 @@
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="aFq-cB-kfr">
                     <rect key="frame" x="230" y="15" width="90" height="39"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="21"/>
-                    <color key="textColor" red="0.99215686270000003" green="0.52549019610000003" blue="0.023529411760000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" red="0.71764705882352942" green="0.17254901960784313" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>

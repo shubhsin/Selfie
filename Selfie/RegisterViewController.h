@@ -13,7 +13,7 @@
 - (IBAction)registerButtonPressed:(id)sender;
 
 @property (weak, nonatomic) IBOutlet UITextField *usernameTextField;
-
 @property (weak, nonatomic) IBOutlet UITextField *emailTextField;
+@property (weak, nonatomic) IBOutlet UITextField *countryTextField;
 
 @end

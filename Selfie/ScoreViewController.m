@@ -78,15 +78,13 @@
         
     } completion:^(BOOL finished) {
         
+        [_scoreLabel removeFromSuperview];
+        [_scoreValueLabel removeFromSuperview];
         _scoreLabel = nil;
         _scoreValueLabel = nil;
         [self pickerView];
     }];
 
-}
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
@@ -121,6 +119,11 @@
     [self performSegueWithIdentifier:@"showLeaderboard" sender:self];
 }
 
+- (IBAction)imagesButtonPressed:(id)sender {
+    
+    [self pickerView];
+}
+
 - (IBAction)facebookShare:(id)sender {
     
     if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook]) {
@@ -145,25 +148,22 @@
 
 - (IBAction)twitterShare:(id)sender {
     
-//    if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter]) {
-//        SLComposeViewController * controller = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
-//        
-//        NSString * selfieScoreString = [NSString stringWithFormat:@"My Selfie Score per second is %i",appDelegate.score];
-//        [controller addImage:_selectedImage.image];
-//        [controller setInitialText:selfieScoreString];
-//        controller.completionHandler = ^(SLComposeViewControllerResult result){
-//            
-//        };
-//        
-//        [self presentViewController:controller animated:YES completion:nil];
-//    }
-//    else{
-//        UIAlertView * alert = [[UIAlertView alloc]initWithTitle:@"Please set up twitter\nin your device" message:nil delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
-//        
-//        [alert show];
-//    }
-    
-    [self dismissViewControllerAnimated:YES completion:nil];
-    
+    if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter]) {
+        SLComposeViewController * controller = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
+        
+        NSString * selfieScoreString = [NSString stringWithFormat:@"My Selfie Score per second is %i",appDelegate.score];
+        [controller addImage:_selectedImage.image];
+        [controller setInitialText:selfieScoreString];
+        controller.completionHandler = ^(SLComposeViewControllerResult result){
+            
+        };
+        
+        [self presentViewController:controller animated:YES completion:nil];
+    }
+    else{
+        UIAlertView * alert = [[UIAlertView alloc]initWithTitle:@"Please set up twitter\nin your device" message:nil delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        
+        [alert show];
+    }
 }
 @end

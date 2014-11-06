@@ -16,6 +16,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *scoreValueLabel;
 - (IBAction)menuButtonPressed:(id)sender;
+- (IBAction)imagesButtonPressed:(id)sender;
 
 - (IBAction)facebookShare:(id)sender;
 - (IBAction)twitterShare:(id)sender;

@@ -57,7 +57,9 @@
     //initialize SystemSounID variable with file URL
     AudioServicesCreateSystemSoundID (CFBridgingRetain(clickSound), &soundClick);
     
-    [self frontView];
+    if (frontView == nil) {
+        [self frontView];
+    }
 
 }
 
