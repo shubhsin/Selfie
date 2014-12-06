@@ -1,0 +1,910 @@
+[
+    {
+        "C": "A",
+        "Country": "Afghanistan"
+    },
+    {
+        "C": "A",
+        "Country": "Albania"
+    },
+    {
+        "C": "A",
+        "Country": "Algeria"
+    },
+    {
+        "C": "A",
+        "Country": "American Samoa"
+    },
+    {
+        "C": "A",
+        "Country": "Andorra"
+    },
+    {
+        "C": "A",
+        "Country": "Angola"
+    },
+    {
+        "C": "A",
+        "Country": "Anguilla"
+    },
+    {
+        "C": "A",
+        "Country": "Antigua & Barbuda"
+    },
+    {
+        "C": "A",
+        "Country": "Argentina"
+    },
+    {
+        "C": "A",
+        "Country": "Armenia"
+    },
+    {
+        "C": "A",
+        "Country": "Aruba"
+    },
+    {
+        "C": "A",
+        "Country": "Australia"
+    },
+    {
+        "C": "A",
+        "Country": "Austria"
+    },
+    {
+        "C": "A",
+        "Country": "Azerbaijan"
+    },
+    {
+        "C": "B",
+        "Country": "Bahamas, The "
+    },
+    {
+        "C": "B",
+        "Country": "Bahrain"
+    },
+    {
+        "C": "B",
+        "Country": "Bangladesh"
+    },
+    {
+        "C": "B",
+        "Country": "Barbados"
+    },
+    {
+        "C": "B",
+        "Country": "Belarus"
+    },
+    {
+        "C": "B",
+        "Country": "Belgium"
+    },
+    {
+        "C": "B",
+        "Country": "Belize"
+    },
+    {
+        "C": "B",
+        "Country": "Benin"
+    },
+    {
+        "C": "B",
+        "Country": "Bermuda"
+    },
+    {
+        "C": "B",
+        "Country": "Bhutan"
+    },
+    {
+        "C": "B",
+        "Country": "Bolivia"
+    },
+    {
+        "C": "B",
+        "Country": "Bosnia & Herzegovina"
+    },
+    {
+        "C": "B",
+        "Country": "Botswana"
+    },
+    {
+        "C": "B",
+        "Country": "Brazil"
+    },
+    {
+        "C": "B",
+        "Country": "British Virgin Is."
+    },
+    {
+        "C": "B",
+        "Country": "Brunei"
+    },
+    {
+        "C": "B",
+        "Country": "Bulgaria"
+    },
+    {
+        "C": "B",
+        "Country": "Burkina Faso"
+    },
+    {
+        "C": "B",
+        "Country": "Burma"
+    },
+    {
+        "C": "B",
+        "Country": "Burundi"
+    },
+    {
+        "C": "C",
+        "Country": "Cambodia"
+    },
+    {
+        "C": "C",
+        "Country": "Cameroon"
+    },
+    {
+        "C": "C",
+        "Country": "Canada"
+    },
+    {
+        "C": "C",
+        "Country": "Cape Verde"
+    },
+    {
+        "C": "C",
+        "Country": "Cayman Islands"
+    },
+    {
+        "C": "C",
+        "Country": "Central African Rep."
+    },
+    {
+        "C": "C",
+        "Country": "Chad"
+    },
+    {
+        "C": "C",
+        "Country": "Chile"
+    },
+    {
+        "C": "C",
+        "Country": "China"
+    },
+    {
+        "C": "C",
+        "Country": "Colombia"
+    },
+    {
+        "C": "C",
+        "Country": "Comoros"
+    },
+    {
+        "C": "C",
+        "Country": "Congo, Dem. Rep. "
+    },
+    {
+        "C": "C",
+        "Country": "Congo, Repub. of the "
+    },
+    {
+        "C": "C",
+        "Country": "Cook Islands"
+    },
+    {
+        "C": "C",
+        "Country": "Costa Rica"
+    },
+    {
+        "C": "C",
+        "Country": "Cote d'Ivoire"
+    },
+    {
+        "C": "C",
+        "Country": "Croatia"
+    },
+    {
+        "C": "C",
+        "Country": "Cuba"
+    },
+    {
+        "C": "C",
+        "Country": "Cyprus"
+    },
+    {
+        "C": "C",
+        "Country": "Czech Republic"
+    },
+    {
+        "C": "D",
+        "Country": "Denmark"
+    },
+    {
+        "C": "D",
+        "Country": "Djibouti"
+    },
+    {
+        "C": "D",
+        "Country": "Dominica"
+    },
+    {
+        "C": "D",
+        "Country": "Dominican Republic"
+    },
+    {
+        "C": "E",
+        "Country": "East Timor"
+    },
+    {
+        "C": "E",
+        "Country": "Ecuador"
+    },
+    {
+        "C": "E",
+        "Country": "Egypt"
+    },
+    {
+        "C": "E",
+        "Country": "El Salvador"
+    },
+    {
+        "C": "E",
+        "Country": "Equatorial Guinea"
+    },
+    {
+        "C": "E",
+        "Country": "Eritrea"
+    },
+    {
+        "C": "E",
+        "Country": "Estonia"
+    },
+    {
+        "C": "E",
+        "Country": "Ethiopia"
+    },
+    {
+        "C": "F",
+        "Country": "Faroe Islands"
+    },
+    {
+        "C": "F",
+        "Country": "Fiji"
+    },
+    {
+        "C": "F",
+        "Country": "Finland"
+    },
+    {
+        "C": "F",
+        "Country": "France"
+    },
+    {
+        "C": "F",
+        "Country": "French Guiana"
+    },
+    {
+        "C": "F",
+        "Country": "French Polynesia"
+    },
+    {
+        "C": "G",
+        "Country": "Gabon"
+    },
+    {
+        "C": "G",
+        "Country": "Gambia, The "
+    },
+    {
+        "C": "G",
+        "Country": "Gaza Strip"
+    },
+    {
+        "C": "G",
+        "Country": "Georgia"
+    },
+    {
+        "C": "G",
+        "Country": "Germany"
+    },
+    {
+        "C": "G",
+        "Country": "Ghana"
+    },
+    {
+        "C": "G",
+        "Country": "Gibraltar"
+    },
+    {
+        "C": "G",
+        "Country": "Greece"
+    },
+    {
+        "C": "G",
+        "Country": "Greenland"
+    },
+    {
+        "C": "G",
+        "Country": "Grenada"
+    },
+    {
+        "C": "G",
+        "Country": "Guadeloupe"
+    },
+    {
+        "C": "G",
+        "Country": "Guam"
+    },
+    {
+        "C": "G",
+        "Country": "Guatemala"
+    },
+    {
+        "C": "G",
+        "Country": "Guernsey"
+    },
+    {
+        "C": "G",
+        "Country": "Guinea"
+    },
+    {
+        "C": "G",
+        "Country": "Guinea-Bissau"
+    },
+    {
+        "C": "G",
+        "Country": "Guyana"
+    },
+    {
+        "C": "H",
+        "Country": "Haiti"
+    },
+    {
+        "C": "H",
+        "Country": "Honduras"
+    },
+    {
+        "C": "H",
+        "Country": "Hong Kong"
+    },
+    {
+        "C": "H",
+        "Country": "Hungary"
+    },
+    {
+        "C": "I",
+        "Country": "Iceland"
+    },
+    {
+        "C": "I",
+        "Country": "India"
+    },
+    {
+        "C": "I",
+        "Country": "Indonesia"
+    },
+    {
+        "C": "I",
+        "Country": "Iran"
+    },
+    {
+        "C": "I",
+        "Country": "Iraq"
+    },
+    {
+        "C": "I",
+        "Country": "Ireland"
+    },
+    {
+        "C": "I",
+        "Country": "Isle of Man"
+    },
+    {
+        "C": "I",
+        "Country": "Israel"
+    },
+    {
+        "C": "I",
+        "Country": "Italy"
+    },
+    {
+        "C": "J",
+        "Country": "Jamaica"
+    },
+    {
+        "C": "J",
+        "Country": "Japan"
+    },
+    {
+        "C": "J",
+        "Country": "Jersey"
+    },
+    {
+        "C": "J",
+        "Country": "Jordan"
+    },
+    {
+        "C": "K",
+        "Country": "Kazakhstan"
+    },
+    {
+        "C": "K",
+        "Country": "Kenya"
+    },
+    {
+        "C": "K",
+        "Country": "Kiribati"
+    },
+    {
+        "C": "K",
+        "Country": "Korea, North "
+    },
+    {
+        "C": "K",
+        "Country": "Korea, South "
+    },
+    {
+        "C": "K",
+        "Country": "Kuwait"
+    },
+    {
+        "C": "K",
+        "Country": "Kyrgyzstan"
+    },
+    {
+        "C": "L",
+        "Country": "Laos"
+    },
+    {
+        "C": "L",
+        "Country": "Latvia"
+    },
+    {
+        "C": "L",
+        "Country": "Lebanon"
+    },
+    {
+        "C": "L",
+        "Country": "Lesotho"
+    },
+    {
+        "C": "L",
+        "Country": "Liberia"
+    },
+    {
+        "C": "L",
+        "Country": "Libya"
+    },
+    {
+        "C": "L",
+        "Country": "Liechtenstein"
+    },
+    {
+        "C": "L",
+        "Country": "Lithuania"
+    },
+    {
+        "C": "L",
+        "Country": "Luxembourg"
+    },
+    {
+        "C": "M",
+        "Country": "Macau"
+    },
+    {
+        "C": "M",
+        "Country": "Macedonia"
+    },
+    {
+        "C": "M",
+        "Country": "Madagascar"
+    },
+    {
+        "C": "M",
+        "Country": "Malawi"
+    },
+    {
+        "C": "M",
+        "Country": "Malaysia"
+    },
+    {
+        "C": "M",
+        "Country": "Maldives"
+    },
+    {
+        "C": "M",
+        "Country": "Mali"
+    },
+    {
+        "C": "M",
+        "Country": "Malta"
+    },
+    {
+        "C": "M",
+        "Country": "Marshall Islands"
+    },
+    {
+        "C": "M",
+        "Country": "Martinique"
+    },
+    {
+        "C": "M",
+        "Country": "Mauritania"
+    },
+    {
+        "C": "M",
+        "Country": "Mauritius"
+    },
+    {
+        "C": "M",
+        "Country": "Mayotte"
+    },
+    {
+        "C": "M",
+        "Country": "Mexico"
+    },
+    {
+        "C": "M",
+        "Country": "Micronesia, Fed. St. "
+    },
+    {
+        "C": "M",
+        "Country": "Moldova"
+    },
+    {
+        "C": "M",
+        "Country": "Monaco"
+    },
+    {
+        "C": "M",
+        "Country": "Mongolia"
+    },
+    {
+        "C": "M",
+        "Country": "Montserrat"
+    },
+    {
+        "C": "M",
+        "Country": "Morocco"
+    },
+    {
+        "C": "M",
+        "Country": "Mozambique"
+    },
+    {
+        "C": "N",
+        "Country": "Namibia"
+    },
+    {
+        "C": "N",
+        "Country": "Nauru"
+    },
+    {
+        "C": "N",
+        "Country": "Nepal"
+    },
+    {
+        "C": "N",
+        "Country": "Netherlands"
+    },
+    {
+        "C": "N",
+        "Country": "Netherlands Antilles"
+    },
+    {
+        "C": "N",
+        "Country": "New Caledonia"
+    },
+    {
+        "C": "N",
+        "Country": "New Zealand"
+    },
+    {
+        "C": "N",
+        "Country": "Nicaragua"
+    },
+    {
+        "C": "N",
+        "Country": "Niger"
+    },
+    {
+        "C": "N",
+        "Country": "Nigeria"
+    },
+    {
+        "C": "N",
+        "Country": "N. Mariana Islands"
+    },
+    {
+        "C": "N",
+        "Country": "Norway"
+    },
+    {
+        "C": "O",
+        "Country": "Oman"
+    },
+    {
+        "C": "P",
+        "Country": "Pakistan"
+    },
+    {
+        "C": "P",
+        "Country": "Palau"
+    },
+    {
+        "C": "P",
+        "Country": "Panama"
+    },
+    {
+        "C": "P",
+        "Country": "Papua New Guinea"
+    },
+    {
+        "C": "P",
+        "Country": "Paraguay"
+    },
+    {
+        "C": "P",
+        "Country": "Peru"
+    },
+    {
+        "C": "P",
+        "Country": "Philippines"
+    },
+    {
+        "C": "P",
+        "Country": "Poland"
+    },
+    {
+        "C": "P",
+        "Country": "Portugal"
+    },
+    {
+        "C": "P",
+        "Country": "Puerto Rico"
+    },
+    {
+        "C": "Q",
+        "Country": "Qatar"
+    },
+    {
+        "C": "R",
+        "Country": "Reunion"
+    },
+    {
+        "C": "R",
+        "Country": "Romania"
+    },
+    {
+        "C": "R",
+        "Country": "Russia"
+    },
+    {
+        "C": "R",
+        "Country": "Rwanda"
+    },
+    {
+        "C": "S",
+        "Country": "Saint Helena"
+    },
+    {
+        "C": "S",
+        "Country": "Saint Kitts & Nevis"
+    },
+    {
+        "C": "S",
+        "Country": "Saint Lucia"
+    },
+    {
+        "C": "S",
+        "Country": "St Pierre & Miquelon"
+    },
+    {
+        "C": "S",
+        "Country": "Saint Vincent and the Grenadines"
+    },
+    {
+        "C": "S",
+        "Country": "Samoa"
+    },
+    {
+        "C": "S",
+        "Country": "San Marino"
+    },
+    {
+        "C": "S",
+        "Country": "Sao Tome & Principe"
+    },
+    {
+        "C": "S",
+        "Country": "Saudi Arabia"
+    },
+    {
+        "C": "S",
+        "Country": "Senegal"
+    },
+    {
+        "C": "S",
+        "Country": "Serbia"
+    },
+    {
+        "C": "S",
+        "Country": "Seychelles"
+    },
+    {
+        "C": "S",
+        "Country": "Sierra Leone"
+    },
+    {
+        "C": "S",
+        "Country": "Singapore"
+    },
+    {
+        "C": "S",
+        "Country": "Slovakia"
+    },
+    {
+        "C": "S",
+        "Country": "Slovenia"
+    },
+    {
+        "C": "S",
+        "Country": "Solomon Islands"
+    },
+    {
+        "C": "S",
+        "Country": "Somalia"
+    },
+    {
+        "C": "S",
+        "Country": "South Africa"
+    },
+    {
+        "C": "S",
+        "Country": "Spain"
+    },
+    {
+        "C": "S",
+        "Country": "Sri Lanka"
+    },
+    {
+        "C": "S",
+        "Country": "Sudan"
+    },
+    {
+        "C": "S",
+        "Country": "Suriname"
+    },
+    {
+        "C": "S",
+        "Country": "Swaziland"
+    },
+    {
+        "C": "S",
+        "Country": "Sweden"
+    },
+    {
+        "C": "S",
+        "Country": "Switzerland"
+    },
+    {
+        "C": "S",
+        "Country": "Syria"
+    },
+    {
+        "C": "T",
+        "Country": "Taiwan"
+    },
+    {
+        "C": "T",
+        "Country": "Tajikistan"
+    },
+    {
+        "C": "T",
+        "Country": "Tanzania"
+    },
+    {
+        "C": "T",
+        "Country": "Thailand"
+    },
+    {
+        "C": "T",
+        "Country": "Togo"
+    },
+    {
+        "C": "T",
+        "Country": "Tonga"
+    },
+    {
+        "C": "T",
+        "Country": "Trinidad & Tobago"
+    },
+    {
+        "C": "T",
+        "Country": "Tunisia"
+    },
+    {
+        "C": "T",
+        "Country": "Turkey"
+    },
+    {
+        "C": "T",
+        "Country": "Turkmenistan"
+    },
+    {
+        "C": "T",
+        "Country": "Turks & Caicos Is"
+    },
+    {
+        "C": "T",
+        "Country": "Tuvalu"
+    },
+    {
+        "C": "U",
+        "Country": "Uganda"
+    },
+    {
+        "C": "U",
+        "Country": "Ukraine"
+    },
+    {
+        "C": "U",
+        "Country": "United Arab Emirates"
+    },
+    {
+        "C": "U",
+        "Country": "United Kingdom"
+    },
+    {
+        "C": "U",
+        "Country": "United States"
+    },
+    {
+        "C": "U",
+        "Country": "Uruguay"
+    },
+    {
+        "C": "U",
+        "Country": "Uzbekistan"
+    },
+    {
+        "C": "V",
+        "Country": "Vanuatu"
+    },
+    {
+        "C": "V",
+        "Country": "Venezuela"
+    },
+    {
+        "C": "V",
+        "Country": "Vietnam"
+    },
+    {
+        "C": "V",
+        "Country": "Virgin Islands"
+    },
+    {
+        "C": "W",
+        "Country": "Wallis and Futuna"
+    },
+    {
+        "C": "W",
+        "Country": "West Bank"
+    },
+    {
+        "C": "W",
+        "Country": "Western Sahara"
+    },
+    {
+        "C": "Y",
+        "Country": "Yemen"
+    },
+    {
+        "C": "Z",
+        "Country": "Zambia"
+    },
+    {
+        "C": "Z",
+        "Country": "Zimbabwe"
+    }
+]

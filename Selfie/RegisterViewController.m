@@ -5,7 +5,7 @@
 //  Created by Shubham Sorte on 02/11/14.
 //  Copyright (c) 2014 Apps2eaze. All rights reserved.
 //
-
+#define kOFFSET_FOR_KEYBOARD 75.0
 
 #import "RegisterViewController.h"
 #import "AppDelegate.h"
@@ -14,7 +14,7 @@
 @interface RegisterViewController ()
 {
     AppDelegate * appDelegate;
-    UITapGestureRecognizer * tap;
+
 }
 @end
 
@@ -30,9 +30,16 @@
     
     [self.navigationController setNavigationBarHidden:YES animated:YES];
     
-    tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideKeyboard)];
+    self.usernameTextField.delegate = self;
+    self.countryTextField.delegate = self;
+    self.emailTextField.delegate = self;
+
     
-    [self.view addGestureRecognizer:tap];
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    
+    _countryTextField.text = appDelegate.country;
     
 }
 
@@ -40,12 +47,6 @@
     return UIStatusBarStyleLightContent;
 }
 
--(void)hideKeyboard
-{
-    [_usernameTextField resignFirstResponder];
-    [_emailTextField resignFirstResponder];
-    [_countryTextField resignFirstResponder];
-}
 
 
 - (void)didReceiveMemoryWarning {
@@ -62,6 +63,7 @@
     // Pass the selected object to the new view controller.
 }
 */
+
 
 - (IBAction)registerButtonPressed:(id)sender {
     
@@ -80,4 +82,42 @@
     }];
     
 }
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+    
+    if (textField == _usernameTextField) {
+        
+        [UIView animateWithDuration:0.5 animations:^{
+            self.view.frame = CGRectMake(0, self.view.frame.origin.y - 85, self.view.frame.size.width, self.view.frame.size.height);
+        }];
+    }
+    
+    if (textField == _emailTextField) {
+        
+        [UIView animateWithDuration:0.5 animations:^{
+            self.view.frame = CGRectMake(0, self.view.frame.origin.y - 125, self.view.frame.size.width, self.view.frame.size.height);
+        }];
+    }
+    if (textField ==_countryTextField) {
+        [self performSegueWithIdentifier:@"showCountry" sender:self];
+    }
+
+
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField {
+    if (textField == _usernameTextField||_emailTextField) {
+        [UIView animateWithDuration:0.5 animations:^{
+            self.view.frame = CGRectMake(0,0, self.view.frame.size.width, self.view.frame.size.height);
+        }];
+    }
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [_usernameTextField resignFirstResponder];
+    [_countryTextField resignFirstResponder];
+    [_emailTextField resignFirstResponder];
+}
+
 @end

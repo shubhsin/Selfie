@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RegisterViewController : UIViewController <UIApplicationDelegate>
+@interface RegisterViewController : UIViewController <UIApplicationDelegate,UITextFieldDelegate>
 
 - (IBAction)registerButtonPressed:(id)sender;
 

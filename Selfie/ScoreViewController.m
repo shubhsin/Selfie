@@ -12,11 +12,19 @@
 #import <Social/Social.h>
 #import "CameraViewController.h"
 #import "MBProgressHUD.h"
+#import "MenuView.h"
+#import "CameraViewController.h"
+
+
 
 @interface ScoreViewController ()
 {
     AppDelegate * appDelegate;
     UIImagePickerController * picker;
+    UIView * blackbg;
+    MenuView * menuView;
+    UIDocumentInteractionController *docFile;
+
 }
 
 @end
@@ -25,11 +33,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    // Do any additional setup after loading the view
     
+    
+    docFile = [[UIDocumentInteractionController alloc]init];
+    docFile.delegate = self; //1 day of head banging
     
     appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
-
+    
+    NSInteger lastHighScore = [[NSUserDefaults standardUserDefaults] integerForKey:@"high_score"];
+    
+    if (lastHighScore<appDelegate.score|| !lastHighScore) {
+        [[NSUserDefaults standardUserDefaults] setInteger:appDelegate.score forKey:@"high_score"];
+    }
+    
     
     _scoreValueLabel.text = [NSString stringWithFormat:@"%i",appDelegate.score];
     CGFloat x = self.view.bounds.size.height + 100;
@@ -49,6 +66,9 @@
 
 -(void)viewDidAppear:(BOOL)animated
 {
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+    
+
     
     PFQuery *query = [PFQuery queryWithClassName:@"Users"];
     [query whereKey:@"username" equalTo:appDelegate.username];
@@ -65,7 +85,7 @@
     }];
 }
 
--(void)pickerView
+-(void)presentPickerView
 {
     [self presentViewController:picker animated:YES completion:nil];
 }
@@ -82,7 +102,7 @@
         [_scoreValueLabel removeFromSuperview];
         _scoreLabel = nil;
         _scoreValueLabel = nil;
-        [self pickerView];
+        [self presentPickerView];
     }];
 
 }
@@ -116,12 +136,71 @@
 
 - (IBAction)menuButtonPressed:(id)sender {
     
+    blackbg = [[UIView alloc]init];
+    blackbg.backgroundColor = [UIColor blackColor];
+    blackbg.frame = CGRectMake(0, 0, self.navigationController.view.bounds.size.width, self.navigationController.view.bounds.size.height);
+    [blackbg addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(removeBlackBg)]];
+    blackbg.alpha = 0;
+    [self.navigationController.view addSubview:blackbg];
+    
+    NSArray * nib = [[NSBundle mainBundle] loadNibNamed:@"Menu" owner:self options:nil];
+    menuView = [nib objectAtIndex:0];
+    menuView.frame = CGRectMake(0, self.view.frame.size.height,self.view.frame.size.width - 20,350);
+    [self.navigationController.view addSubview:menuView];
+    menuView.center = CGPointMake(self.navigationController.view.center.x,self.navigationController.view.center.y);
+    menuView.transform = CGAffineTransformMakeTranslation(0, self.view.frame.size.height - 50);
+    
+    [menuView.worldRankingButton addTarget:self action:@selector(presentLeaderBoard) forControlEvents:UIControlEventTouchUpInside];
+    [menuView.restartButton addTarget:self action:@selector(goToFirstView) forControlEvents:UIControlEventTouchUpInside];
+    
+    [UIView animateWithDuration:0.5 delay:0 usingSpringWithDamping:0.8 initialSpringVelocity:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        blackbg.alpha = 0.8;
+        menuView.transform = CGAffineTransformIdentity;
+    } completion:^(BOOL finished) {
+        
+    }];
+
+}
+
+-(void)goToFirstView
+{
+    [self removeBlackBg];
+    
+    UIStoryboard * mainStoryBoard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    
+    UINavigationController * viewController =[mainStoryBoard instantiateViewControllerWithIdentifier:@"cameraView"];
+    
+    [self presentViewController:viewController animated:YES completion:nil];
+    
+}
+
+-(void)presentLeaderBoard
+{
+    [self removeBlackBg];
+    
     [self performSegueWithIdentifier:@"showLeaderboard" sender:self];
 }
 
 - (IBAction)imagesButtonPressed:(id)sender {
     
-    [self pickerView];
+    [self presentPickerView];
+    
+}
+
+-(void)removeBlackBg
+{
+    [UIView animateWithDuration:0.35 animations:^{
+        
+        blackbg.alpha = 0;
+        menuView.frame = CGRectMake(10, self.view.frame.size.height, self.view.frame.size.width -20, 350);
+        
+    }completion:^(BOOL finished) {
+        [blackbg removeFromSuperview];
+        blackbg = nil;
+        [menuView removeFromSuperview];
+        menuView = nil;
+        
+    }];
 }
 
 - (IBAction)facebookShare:(id)sender {
@@ -143,7 +222,69 @@
         
         [alert show];
     }
+    
+//    NSString *savePath = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/originalImage.ig"];
+//    
+//    [UIImagePNGRepresentation(_selectedImage.image) writeToFile:savePath atomically:YES];
+//    
+//    UIGraphicsBeginImageContextWithOptions(self.view.bounds.size, self.view.opaque, 0.0);
+//    [self.view.layer renderInContext:UIGraphicsGetCurrentContext()];
+//    UIGraphicsEndImageContext();
+//    
+//    NSURL *igImageHookFile = [[NSURL alloc] initWithString:[[NSString alloc] initWithFormat:@"file://%@", savePath]];
+//
+//    docFile.UTI = @"com.instagram.exclusivegram";
+//    docFile = [self setupControllerWithURL:igImageHookFile usingDelegate:self];
+//    docFile=[UIDocumentInteractionController interactionControllerWithURL:igImageHookFile];
+//
+//    NSURL *instagramURL = [NSURL URLWithString:@"instagram://media?id=MEDIA_ID"];
+//    //media?id=MEDIA_ID
+//    if ([[UIApplication sharedApplication] canOpenURL:instagramURL]) {
+//        
+//        [docFile presentOpenInMenuFromRect:CGRectZero inView: self.view animated: YES ];
+//    }
+//    else {
+//        NSLog(@"No Instagram Found");
+//    }
+    
+}
 
+- (UIDocumentInteractionController *) setupControllerWithURL: (NSURL*) fileURL usingDelegate: (id) interactionDelegate {
+    
+    UIDocumentInteractionController *interactionController = [UIDocumentInteractionController interactionControllerWithURL: fileURL];
+    interactionController.delegate = interactionDelegate;
+    
+    return interactionController;
+}
+
+-(void)instagramShare:(id)sender
+{
+    
+    NSString *savePath = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/originalImage.ig"];
+    
+    [UIImagePNGRepresentation(_selectedImage.image) writeToFile:savePath atomically:YES];
+    
+    UIGraphicsBeginImageContextWithOptions(self.view.bounds.size, self.view.opaque, 0.0);
+    [self.view.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIGraphicsEndImageContext();
+    
+    NSURL *igImageHookFile = [[NSURL alloc] initWithString:[[NSString alloc] initWithFormat:@"file://%@", savePath]];
+    
+    docFile.UTI = @"com.instagram.exclusivegram";
+    docFile = [self setupControllerWithURL:igImageHookFile usingDelegate:self];
+    docFile=[UIDocumentInteractionController interactionControllerWithURL:igImageHookFile];
+    
+    NSURL *instagramURL = [NSURL URLWithString:@"instagram://media?id=MEDIA_ID"];
+    //media?id=MEDIA_ID
+    if ([[UIApplication sharedApplication] canOpenURL:instagramURL]) {
+        
+        [docFile presentOpenInMenuFromRect:CGRectZero inView: self.view animated: YES ];
+    }
+    else {
+        NSLog(@"No Instagram Found");
+    }
+
+    
 }
 
 - (IBAction)twitterShare:(id)sender {

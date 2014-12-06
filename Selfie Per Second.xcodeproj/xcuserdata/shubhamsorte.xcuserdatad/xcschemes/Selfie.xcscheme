@@ -17,7 +17,7 @@
                BlueprintIdentifier = "A34C699D1A03BEA300026E3D"
                BuildableName = "Selfie.app"
                BlueprintName = "Selfie"
-               ReferencedContainer = "container:Selfie.xcodeproj">
+               ReferencedContainer = "container:Selfie Per Second.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -31,7 +31,7 @@
                BlueprintIdentifier = "A34C69B61A03BEA300026E3D"
                BuildableName = "SelfieTests.xctest"
                BlueprintName = "SelfieTests"
-               ReferencedContainer = "container:Selfie.xcodeproj">
+               ReferencedContainer = "container:Selfie Per Second.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -49,7 +49,7 @@
                BlueprintIdentifier = "A34C69B61A03BEA300026E3D"
                BuildableName = "SelfieTests.xctest"
                BlueprintName = "SelfieTests"
-               ReferencedContainer = "container:Selfie.xcodeproj">
+               ReferencedContainer = "container:Selfie Per Second.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -59,7 +59,7 @@
             BlueprintIdentifier = "A34C699D1A03BEA300026E3D"
             BuildableName = "Selfie.app"
             BlueprintName = "Selfie"
-            ReferencedContainer = "container:Selfie.xcodeproj">
+            ReferencedContainer = "container:Selfie Per Second.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -78,7 +78,7 @@
             BlueprintIdentifier = "A34C699D1A03BEA300026E3D"
             BuildableName = "Selfie.app"
             BlueprintName = "Selfie"
-            ReferencedContainer = "container:Selfie.xcodeproj">
+            ReferencedContainer = "container:Selfie Per Second.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -96,7 +96,7 @@
             BlueprintIdentifier = "A34C699D1A03BEA300026E3D"
             BuildableName = "Selfie.app"
             BlueprintName = "Selfie"
-            ReferencedContainer = "container:Selfie.xcodeproj">
+            ReferencedContainer = "container:Selfie Per Second.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -15,6 +15,7 @@
 @property int score;
 
 @property (strong,nonatomic) NSString * username;
+@property (strong,nonatomic) NSString * country;
 @property int timeInterval;
 
 

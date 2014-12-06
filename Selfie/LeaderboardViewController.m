@@ -32,9 +32,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    
+
     appDelegate = [[UIApplication sharedApplication]delegate];
-    _presentScore.text = [NSString stringWithFormat:@"%i",appDelegate.score];
+    _presentScore.text = [NSString stringWithFormat:@"%li",(long)[[NSUserDefaults standardUserDefaults] integerForKey:@"high_score"]];
+    
     _scoreCircleImage.alpha = 0;
     _yourHighScoreLabel.alpha = 0;
     hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
@@ -118,7 +119,7 @@
     leaderboard = [scoreArray objectAtIndex:indexPath.row];
     cell.username.text = leaderboard.username;
     cell.countryName.text = leaderboard.country;
-    cell.rankNumber.text = [NSString stringWithFormat:@"%li",(indexPath.row + 1)];
+    cell.rankNumber.text = [NSString stringWithFormat:@"%i",(indexPath.row + 1)];
     cell.scoreLabel.text = [NSString stringWithFormat:@"%@",leaderboard.score];
     
     return cell;

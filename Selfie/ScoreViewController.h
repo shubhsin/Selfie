@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ScoreViewController : UIViewController<UIImagePickerControllerDelegate,UINavigationControllerDelegate>
+
+@interface ScoreViewController : UIViewController<UIImagePickerControllerDelegate,UINavigationControllerDelegate,UIDocumentInteractionControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *selectedImage;
 
@@ -20,5 +21,5 @@
 
 - (IBAction)facebookShare:(id)sender;
 - (IBAction)twitterShare:(id)sender;
-
+- (IBAction)instagramShare:(id)sender;
 @end

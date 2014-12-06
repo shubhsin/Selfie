@@ -43,6 +43,9 @@
 		A37132701A09326000033BED /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A371326F1A09326000033BED /* MBProgressHUD.m */; };
 		A37132731A0932C600033BED /* Leaderboard.m in Sources */ = {isa = PBXBuildFile; fileRef = A37132721A0932C600033BED /* Leaderboard.m */; };
 		A38167391A0C09CF00BD29E6 /* gola.png in Resources */ = {isa = PBXBuildFile; fileRef = A38167381A0C09CF00BD29E6 /* gola.png */; };
+		A38C76A51A0EAA290092F536 /* start.png in Resources */ = {isa = PBXBuildFile; fileRef = A38C76A41A0EAA290092F536 /* start.png */; };
+		A38C76A71A0EAA440092F536 /* sett.png in Resources */ = {isa = PBXBuildFile; fileRef = A38C76A61A0EAA440092F536 /* sett.png */; };
+		A3AEDB441A18BB3400A00802 /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = A3AEDB431A18BB3400A00802 /* countries.json */; };
 		A3BA50D51A065E3C00CC9F52 /* CameraSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3BA50D41A065E3C00CC9F52 /* CameraSettingViewController.m */; };
 		A3BBB0E61A0525D2003CCCC6 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3BBB0E51A0525D2003CCCC6 /* CameraViewController.m */; };
 		A3C02FF01A0C0336002FCF4C /* pics_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A3C02FEF1A0C0336002FCF4C /* pics_icon.png */; };
@@ -50,10 +53,10 @@
 		A3C02FF41A0C0576002FCF4C /* face.png in Resources */ = {isa = PBXBuildFile; fileRef = A3C02FF31A0C0576002FCF4C /* face.png */; };
 		A3C02FF61A0C057B002FCF4C /* twit.png in Resources */ = {isa = PBXBuildFile; fileRef = A3C02FF51A0C057B002FCF4C /* twit.png */; };
 		A3DB69981A0925A4000EEF1C /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = A3DB69971A0925A4000EEF1C /* circle.png */; };
+		A3EAD23B1A17CA5600B7C071 /* CountyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3EAD23A1A17CA5600B7C071 /* CountyViewController.m */; };
 		A3FE27D61A06B11000E5A775 /* shutter.wav in Resources */ = {isa = PBXBuildFile; fileRef = A3FE27D51A06B11000E5A775 /* shutter.wav */; };
 		A3FE27D81A06B7AE00E5A775 /* Menu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3FE27D71A06B7AE00E5A775 /* Menu.xib */; };
 		A3FE27DB1A06B84B00E5A775 /* MenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FE27DA1A06B84B00E5A775 /* MenuView.m */; };
-		A3FE27DF1A06B94E00E5A775 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = A3FE27DE1A06B94E00E5A775 /* settings.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +117,9 @@
 		A37132711A0932C600033BED /* Leaderboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Leaderboard.h; sourceTree = "<group>"; };
 		A37132721A0932C600033BED /* Leaderboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Leaderboard.m; sourceTree = "<group>"; };
 		A38167381A0C09CF00BD29E6 /* gola.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gola.png; sourceTree = "<group>"; };
+		A38C76A41A0EAA290092F536 /* start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start.png; sourceTree = "<group>"; };
+		A38C76A61A0EAA440092F536 /* sett.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sett.png; sourceTree = "<group>"; };
+		A3AEDB431A18BB3400A00802 /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
 		A3BA50D31A065E3C00CC9F52 /* CameraSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraSettingViewController.h; sourceTree = "<group>"; };
 		A3BA50D41A065E3C00CC9F52 /* CameraSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraSettingViewController.m; sourceTree = "<group>"; };
 		A3BBB0E41A0525D2003CCCC6 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
@@ -123,11 +129,12 @@
 		A3C02FF31A0C0576002FCF4C /* face.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = face.png; sourceTree = "<group>"; };
 		A3C02FF51A0C057B002FCF4C /* twit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twit.png; sourceTree = "<group>"; };
 		A3DB69971A0925A4000EEF1C /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle.png; sourceTree = "<group>"; };
+		A3EAD2391A17CA5600B7C071 /* CountyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountyViewController.h; sourceTree = "<group>"; };
+		A3EAD23A1A17CA5600B7C071 /* CountyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountyViewController.m; sourceTree = "<group>"; };
 		A3FE27D51A06B11000E5A775 /* shutter.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shutter.wav; sourceTree = "<group>"; };
 		A3FE27D71A06B7AE00E5A775 /* Menu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Menu.xib; sourceTree = "<group>"; };
 		A3FE27D91A06B84B00E5A775 /* MenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuView.h; sourceTree = "<group>"; };
 		A3FE27DA1A06B84B00E5A775 /* MenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuView.m; sourceTree = "<group>"; };
-		A3FE27DE1A06B94E00E5A775 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +217,8 @@
 		A34031CE1A05E43900615E26 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				A38C76A41A0EAA290092F536 /* start.png */,
+				A38C76A61A0EAA440092F536 /* sett.png */,
 				A38167381A0C09CF00BD29E6 /* gola.png */,
 				A3C02FF51A0C057B002FCF4C /* twit.png */,
 				A3C02FF31A0C0576002FCF4C /* face.png */,
@@ -221,7 +230,6 @@
 				A3DB69971A0925A4000EEF1C /* circle.png */,
 				A33EC5F31A07B3D300C7C6CB /* button_active.png */,
 				A33EC5F11A07AF7900C7C6CB /* login_textfield.png */,
-				A3FE27DE1A06B94E00E5A775 /* settings.png */,
 				A34031CF1A05E44500615E26 /* cir.png */,
 			);
 			name = Images;
@@ -248,6 +256,7 @@
 		A34C69A01A03BEA300026E3D /* Selfie */ = {
 			isa = PBXGroup;
 			children = (
+				A38EDAA61A331C9A00A12E04 /* Libraries */,
 				A371326D1A09324500033BED /* HUD */,
 				A34C69C91A03BEB600026E3D /* Controller */,
 				A34C69C81A03BEB200026E3D /* View */,
@@ -264,6 +273,7 @@
 			isa = PBXGroup;
 			children = (
 				A3FE27D51A06B11000E5A775 /* shutter.wav */,
+				A3AEDB431A18BB3400A00802 /* countries.json */,
 				A320BEF61A05F7BE00D5EB7C /* Frameworks */,
 				A34031CE1A05E43900615E26 /* Images */,
 				A34C69A51A03BEA300026E3D /* AppDelegate.h */,
@@ -322,6 +332,8 @@
 				A3BA50D41A065E3C00CC9F52 /* CameraSettingViewController.m */,
 				A32032671A09126F00260029 /* LeaderboardViewController.h */,
 				A32032681A09126F00260029 /* LeaderboardViewController.m */,
+				A3EAD2391A17CA5600B7C071 /* CountyViewController.h */,
+				A3EAD23A1A17CA5600B7C071 /* CountyViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -333,6 +345,13 @@
 				A371326F1A09326000033BED /* MBProgressHUD.m */,
 			);
 			name = HUD;
+			sourceTree = "<group>";
+		};
+		A38EDAA61A331C9A00A12E04 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -391,7 +410,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A34C69991A03BEA300026E3D /* Build configuration list for PBXProject "Selfie" */;
+			buildConfigurationList = A34C69991A03BEA300026E3D /* Build configuration list for PBXProject "Selfie Per Second" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -417,19 +436,21 @@
 			files = (
 				A3C02FF41A0C0576002FCF4C /* face.png in Resources */,
 				A38167391A0C09CF00BD29E6 /* gola.png in Resources */,
+				A38C76A51A0EAA290092F536 /* start.png in Resources */,
 				A3C02FF21A0C0545002FCF4C /* ham.png in Resources */,
 				A34031D01A05E44500615E26 /* cir.png in Resources */,
+				A38C76A71A0EAA440092F536 /* sett.png in Resources */,
 				A33EC5F41A07B3D300C7C6CB /* button_active.png in Resources */,
 				A34CB9C81A0BEF8100CBD901 /* bg_red.png in Resources */,
 				A32032631A090EA300260029 /* LeaderBoardCell.xib in Resources */,
 				A3DB69981A0925A4000EEF1C /* circle.png in Resources */,
 				A34C69AD1A03BEA300026E3D /* Main.storyboard in Resources */,
 				A34CB9C61A0BEF6E00CBD901 /* selfie_name.png in Resources */,
+				A3AEDB441A18BB3400A00802 /* countries.json in Resources */,
 				A34CB9C41A0BEF2B00CBD901 /* camera_icon.png in Resources */,
 				A33EC5F21A07AF7900C7C6CB /* login_textfield.png in Resources */,
 				A3C02FF61A0C057B002FCF4C /* twit.png in Resources */,
 				A3FE27D61A06B11000E5A775 /* shutter.wav in Resources */,
-				A3FE27DF1A06B94E00E5A775 /* settings.png in Resources */,
 				A3FE27D81A06B7AE00E5A775 /* Menu.xib in Resources */,
 				A34C69B21A03BEA300026E3D /* LaunchScreen.xib in Resources */,
 				A34C69AF1A03BEA300026E3D /* Images.xcassets in Resources */,
@@ -461,6 +482,7 @@
 				A34C69A41A03BEA300026E3D /* main.m in Sources */,
 				A32032661A09116700260029 /* LeaderBoardTableViewCell.m in Sources */,
 				A364F6AA1A04ADDB00495AF4 /* ScoreViewController.m in Sources */,
+				A3EAD23B1A17CA5600B7C071 /* CountyViewController.m in Sources */,
 				A3FE27DB1A06B84B00E5A775 /* MenuView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -644,7 +666,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A34C69991A03BEA300026E3D /* Build configuration list for PBXProject "Selfie" */ = {
+		A34C69991A03BEA300026E3D /* Build configuration list for PBXProject "Selfie Per Second" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A34C69BF1A03BEA300026E3D /* Debug */,

@@ -39,11 +39,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    
     appDelegate = [[UIApplication sharedApplication]delegate];
+    [self.navigationController setNavigationBarHidden:YES];
 }
 
 -(void)viewDidAppear:(BOOL)animated
 {
+    [self.navigationController setNavigationBarHidden:YES];
     [self.navigationController setNavigationBarHidden:YES animated:NO];
     NSLog(@"Time int is %i",appDelegate.timeInterval);
     
@@ -75,28 +78,25 @@
         self.showsCameraControls = NO;
         self.allowsEditing = NO;
         self.cameraDevice = UIImagePickerControllerCameraDeviceFront;
+        self.cameraCaptureMode = UIImageOrientationUp;
+        
     }
     
     frontView = [[UIView alloc]initWithFrame:FRAME];
     frontView.backgroundColor = [UIColor blackColor];
     frontView.alpha = 0.8;
     [self.view addSubview:frontView];
-    startButton = [[UIButton alloc]initWithFrame:CGRectMake(self.view.center.x-50, self.view.center.y-25, 100, 50)];
-    startButton.backgroundColor = [UIColor redColor];
+    startButton = [[UIButton alloc]initWithFrame:CGRectMake(self.view.center.x-37, self.view.center.y-25, 75, 75)];
     [startButton addTarget:self action:@selector(removeFrontView) forControlEvents:UIControlEventTouchUpInside];
-    
-    
-    UILabel * startButtonText = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 50)];
-    startButtonText.textAlignment = NSTextAlignmentCenter;
-    startButtonText.text = @"START";
-    startButtonText.textColor =  [UIColor whiteColor];
-    [startButton addSubview:startButtonText];
+    UIImageView * startButtonImage = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 75, 75)];
+    startButtonImage.image = [UIImage imageNamed:@"start.png"];
+    [startButton addSubview:startButtonImage];
     [frontView addSubview:startButton];
     
-    settingButton = [[UIButton alloc] initWithFrame:CGRectMake(10, 10, 150,75)];
+    settingButton = [[UIButton alloc] initWithFrame:CGRectMake(10, 10, 55,55)];
     [settingButton addTarget:self action:@selector(showSettingViewController) forControlEvents:UIControlEventTouchUpInside];
-    UIImageView * settingButtonImage = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 150, 75)];
-    settingButtonImage.image = [UIImage imageNamed:@"settings.png"];
+    UIImageView * settingButtonImage = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 75, 75)];
+    settingButtonImage.image = [UIImage imageNamed:@"sett.png"];
 
     [settingButton addSubview:settingButtonImage];
     [frontView addSubview:settingButton];
@@ -135,7 +135,7 @@
 {
     
     started = @"YES";
-//    AudioServicesPlaySystemSound(soundClick);
+    AudioServicesPlaySystemSound(soundClick);
     count ++;
     
     

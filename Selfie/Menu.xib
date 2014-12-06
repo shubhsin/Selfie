@@ -10,20 +10,35 @@
             <rect key="frame" x="0.0" y="0.0" width="300" height="350"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="knr-PK-hJE">
-                    <rect key="frame" x="86" y="107" width="128" height="43"/>
-                    <state key="normal" title="WORLD RANKING">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_red.png" translatesAutoresizingMaskIntoConstraints="NO" id="i8e-rM-HO4">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="350"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="eta-ke-oM0"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j4P-N9-2wg">
+                    <rect key="frame" x="40" y="195" width="221" height="57"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="23"/>
+                    <state key="normal" title="RESTART" backgroundImage="button_active.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j4P-N9-2wg">
-                    <rect key="frame" x="86" y="195" width="128" height="43"/>
-                    <state key="normal" title="RESTART">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="knr-PK-hJE">
+                    <rect key="frame" x="40" y="95" width="221" height="57"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="23"/>
+                    <state key="normal" title="WORLD RANKING" backgroundImage="button_active.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="i8e-rM-HO4" secondAttribute="centerX" id="9h3-H1-MHk"/>
+                <constraint firstItem="i8e-rM-HO4" firstAttribute="top" secondItem="Ix8-Jb-cR3" secondAttribute="top" id="UuY-88-sAt"/>
+                <constraint firstAttribute="bottom" secondItem="i8e-rM-HO4" secondAttribute="bottom" id="h5P-kS-5mj"/>
+            </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
@@ -33,4 +48,8 @@
             <point key="canvasLocation" x="410" y="249"/>
         </view>
     </objects>
+    <resources>
+        <image name="bg_red.png" width="640" height="1136"/>
+        <image name="button_active.png" width="480" height="90"/>
+    </resources>
 </document>
